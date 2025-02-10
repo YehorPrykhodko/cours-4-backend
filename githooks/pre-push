@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Запуск pre-push хуков..."
+
+# Запускаем тесты перед пушем
+./run-tests.sh
+
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit 1
+fi
+
+echo "OK"
+exit 0

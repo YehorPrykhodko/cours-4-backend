@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des bâtiments{% endblock %}
+
+{% block body %}
+    <h1>Liste des bâtiments</h1>
+    <ul>
+        {% for building in buildings %}
+            <li>{{ building.name }} - {{ building.address }}, {{ building.city }}</li>
+        {% else %}
+            <li>Aucun bâtiment trouvé.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
