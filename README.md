@@ -25,6 +25,7 @@ Listes des points attendu:
  ✅script bash qui execute tout les test - ./run-tests.sh
 
 Listes des points bonus
+
  ✅un dossier Githook, avec un precommit et prepush qui execute tout les tests
 
 
